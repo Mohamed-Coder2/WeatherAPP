@@ -11,8 +11,8 @@ export default function Top(props){
         onClick={props.handleClick}
       >{props.img}</div>
       <div></div>
-      <div className="m-4 text-4xl text-center">{props.Name ? props.Name : "-"}</div>
-      <div className="m-4 text-3xl text-right">{props.Time}</div>
+      <div className="p-2 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center">{props.Name ? props.Name : "-"}</div>
+      <div className="p-2 text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-right">{props.Time}</div>
 
     </>
   )

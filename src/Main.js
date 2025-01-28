@@ -11,7 +11,7 @@ const lang = "en";
 function ParentComponent() {
   const menu = (
     <React.Fragment>
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-list hover:cursor-pointer" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-list hover:cursor-pointer" viewBox="0 0 16 16">
         <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
       </svg>
     </React.Fragment>
@@ -92,11 +92,11 @@ function ParentComponent() {
   };
 
   return (
-    <div className='w-400 h-screen bg-cover bg-center flex flex-col items-center' style={{ backgroundImage: `url(${imageSrc})` }}>
-      <div className='flex w-full h-full'>
+    <div className='w-full h-screen bg-cover bg-center flex flex-col items-center' style={{ backgroundImage: `url(${imageSrc})` }}>
+      <div className='w-full flex h-full'>
         <div className="w-full h-full bg-cover bg-center flex flex-col justify-between">
           <div className=''>
-            <div className='w-full h-1/3 text-white grid grid-cols-3 bg-transparent bg-opacity-20 backdrop-blur-lg drop-shadow-lg'>
+            <div className='h-1/3 text-white grid grid-cols-3 bg-transparent bg-opacity-20 backdrop-blur-lg drop-shadow-lg'>
               <Top
                 Time={time}
                 Name={selectedCity}

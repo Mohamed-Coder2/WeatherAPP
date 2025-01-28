@@ -57,10 +57,10 @@ const CitySelector = ({selectedCity, setSelectedCity}) => {
   };
 
   return (
-    <div className="flex items-center w-full h-full text-blue-600">
-      <div className="w-full h-full flex flex-col">
+    <>
+      <div className="w-full h-full flex flex-col items-center">
         <input
-          className="w-3/4 h-12 text-center break-normal m-4 ml-8 rounded-md hover:cursor-text"
+          className="w-3/4 h-8 sm:h-9 md:h-10 lg:h-11 xl:h-12 text-center break-normal m-4 ml-8 rounded-md hover:cursor-text"
           type="text"
           placeholder="Select a country"
           value={selectedCountry}
@@ -71,7 +71,7 @@ const CitySelector = ({selectedCity, setSelectedCity}) => {
 
         {selectedCountry && (
           <input
-            className="w-3/4 h-12 text-center break-normal m-4 ml-8 rounded-md hover:cursor-text"
+            className="w-3/4 h-8 sm:h-9 md:h-10 lg:h-11 xl:h-12 text-center break-normal m-4 ml-8 rounded-md hover:cursor-text"
             type="text"
             placeholder="Select a city"
             value={selectedCity}
@@ -109,7 +109,7 @@ const CitySelector = ({selectedCity, setSelectedCity}) => {
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 
